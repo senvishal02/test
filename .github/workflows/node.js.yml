@@ -19,6 +19,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install --production --silent --no-progress
-    - run: npm install typescript@">=3.7.0" --save-dev --save-exact
-    - run: npm ci
+#    - run: npm install typescript@">=3.7.0" --save-dev --save-exact
+#   - run: npm ci
     - run: npm run build --if-present
