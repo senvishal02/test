@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/backend/
+    destination: /home/ubuntu/index.html
 hooks:
   AfterInstall:
     - location: afterinstallhook.sh
       timeout: 1000
-      runas: ec2-user
+      runas: ubuntu
